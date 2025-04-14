@@ -2,16 +2,17 @@
 
 @section('content')
 <div class="container mt-5">
+<div class="row justify-content-center">
     <div class="text-center mb-4">
-        <img src="{{ asset('images/logo.png') }}" alt="Logo Anak" style="width: 80px;">
+        <img src="{{ asset('images/logo.png') }}" alt="Logo Anak" style="width: 100px;">
         <h2 class="mt-2">Form Pelaporan Anak</h2>
     </div>
 
     @if(session('success'))
         <div class="alert alert-success text-center">{{ session('success') }}</div>
     @endif
-
-    <form action="{{ route('pelaporan.submit') }}" method="POST" class="mx-auto" style="max-width: 700px;">
+    <div class="p-4" style="background-color: #a3d9c9; border-radius: 15px; max-width: 800px; ">
+        <form action="{{ route('pelaporan.submit') }}" method="POST" class="mx-auto" style="max-width: 700px;">
         @csrf
 
         <div class="mb-3">
@@ -43,5 +44,7 @@
             <button type="submit" class="btn btn-success px-5">Kirim</button>
         </div>
     </form>
+    </div>
+</div>
 </div>
 @endsection
