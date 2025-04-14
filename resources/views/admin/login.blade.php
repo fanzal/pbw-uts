@@ -14,6 +14,7 @@
         }
 
         .login-container {
+            background-color: #a3d9c9;
             width: 100%;
             max-width: 450px;
             border: 1px solid #ddd;
@@ -23,18 +24,18 @@
         }
 
         .login-logo {
-            width: 70px;
+            width: 100px;
         }
 
         .login-title {
             font-size: 22px;
             font-weight: bold;
             margin-top: 10px;
-            color: #2f9e44;
+            color: #093b3b;
         }
 
         .btn-login {
-            background-color: #2f9e44;
+            background-color: #093b3b;
             color: white;
             width: 100%;
         }
