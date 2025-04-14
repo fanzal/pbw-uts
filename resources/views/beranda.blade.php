@@ -9,7 +9,7 @@
             <p class="mt-3 fs-5" style="font-size: 30px;">Beri bantuan untuk anak terlantar<br>dan anak yatim</p>
         </div>
         <div class="col-md-6 text-center">
-            <img src="{{ asset('images/logo.png') }}" alt="Ilustrasi Anak" style="max-width: 250px;">
+            <img src="{{ asset('images/logo.png') }}" alt="Ilustrasi Anak" style="max-width: 500px;">
         </div>
     </div>
 </div>
