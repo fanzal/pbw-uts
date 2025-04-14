@@ -3,8 +3,9 @@
 @section('content')
     <h1 class="page-title">Data Pelaporan</h1>
 
-    <div class="total-box">
-        Total Laporan: {{ $totalPelaporan }}
+    <div class="summary-card">
+    <h2>Total Laporan</h2>
+       <p> {{ $totalPelaporan }} </p>
     </div>
 
     <div class="table-container">
