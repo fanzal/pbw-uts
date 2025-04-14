@@ -1,17 +1,17 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h2 style="font-size: 28px; margin-bottom: 10px;">Dashboard</h2>
-    <p style="margin-bottom: 20px;">Selamat datang, Admin!</p>
+    <h2 style="font-size: 50px; margin-bottom: 10px;">Dashboard</h2>
+    <p style="margin-bottom: 25px;">Selamat datang, Admin!</p>
 
-    <div style="display: flex; gap: 20px; margin-bottom: 30px;">
-        <div style="flex: 1; background: #cbeefd; padding: 20px; border-radius: 10px;">
-            <p style="font-size: 14px; color: #555;">Pelaporan</p>
-            <h3 style="font-size: 24px;">{{ $totalPelaporan }}</h3>
+    <div style="display: flex; gap: 20px; margin-bottom: 30px; text-align: center;">
+        <div style="flex: 1; background: #a3d9c9; padding: 20px; border-radius: 10px;">
+            <p style="font-size: 20px; ">Pelaporan</p>
+            <h3 style="font-size: 30px;">{{ $totalPelaporan }}</h3>
         </div>
-        <div style="flex: 1; background: #cbeefd; padding: 20px; border-radius: 10px;">
-            <p style="font-size: 14px; color: #555;">Jumlah Donasi</p>
-            <h3 style="font-size: 24px;">Rp. {{ number_format($totalDonasi, 0, ',', '.') }}</h3>
+        <div style="flex: 1; background: #a3d9c9; padding: 20px; border-radius: 10px;">
+            <p style="font-size: 20px; ">Jumlah Donasi</p>
+            <h3 style="font-size: 30px;">Rp. {{ number_format($totalDonasi, 0, ',', '.') }}</h3>
         </div>
     </div>
 
