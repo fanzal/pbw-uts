@@ -5,15 +5,15 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="text-center mb-4">
-                <img src="{{ asset('images/logo.png') }}" alt="Anak" style="width: 80px;">
+                <img src="{{ asset('images/logo.png') }}" alt="Anak" style="width: 100px;">
                 <h2 class="mt-3">Donasi</h2>
                 <p>Beri bantuan untuk anak-anak di RUMOH ANEUK</p>
             </div>
             @if(session('success'))
                 <div class="alert alert-success">{{ session('success') }}</div>
             @endif
-            <div class="p-4" style="background-color: #e9f5f0; border-radius: 15px;">
-                <form action="{{ route('donasi.submit') }}" method="POST">
+            <div class="p-4" style="background-color: #a3d9c9; border-radius: 15px; max-width: 800px;">
+                <form action="{{ route('donasi.submit') }}" method="POST" class="mx-auto" style="max-width: 700px;">
                     @csrf
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama</label>
